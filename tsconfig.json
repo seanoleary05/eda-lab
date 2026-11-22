@@ -23,6 +23,7 @@
     "typeRoots": [
       "./node_modules/@types"
     ],
+    "types": ["node", "aws-lambda"],
     "baseUrl": ".",
     "paths": {
       "/opt/nodejs/sharp-utils": ["layers/sharp-utils/nodejs/sharp-utils"],
