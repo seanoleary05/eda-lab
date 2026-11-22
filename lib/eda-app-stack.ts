@@ -37,6 +37,7 @@ export class EDAAppStack extends cdk.Stack {
     });
 
     // Lambda functions
+    
 
     const processImageFn = new lambdanode.NodejsFunction(
       this,
@@ -55,6 +56,9 @@ export class EDAAppStack extends cdk.Stack {
       timeout: cdk.Duration.seconds(3),
       entry: `${__dirname}/../lambdas/mailer.ts`,
     });
+
+   
+
 
     // S3 --> SQS
     imagesBucket.addEventNotification(
